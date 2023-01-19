@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { GreetingComponent } from './greeting/greeting.component';
+import { GreetingDetailComponent } from './greeting-detail/greeting-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GreetingComponent
+    GreetingComponent,
+    GreetingDetailComponent
   ],
   imports: [
     BrowserModule,

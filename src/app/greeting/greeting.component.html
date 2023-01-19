@@ -1,5 +1,3 @@
-
-
 <h2>My Greetings</h2>
 <ul class="heroes">
   <li *ngFor="let greeting of greetings">
@@ -10,12 +8,7 @@
   </li>
 </ul>
 
-<div *ngIf="selectedGreeting">
-  <h2>{{selectedGreeting.greet_en | uppercase}} Translates as</h2>
-  <div>lang: {{selectedGreeting.lang}}</div>
-  <div>
-    <label for="hero-name">Greeting: </label>
-    <input id="hero-name" [(ngModel)]="selectedGreeting.greet" placeholder="name">
-    <span class="name">{{selectedGreeting.greet}}</span>
-  </div>
-</div>
+<app-greeting-detail [greeting]="selectedGreeting"></app-greeting-detail>
+
+
+
