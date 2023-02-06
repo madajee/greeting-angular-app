@@ -1,4 +1,6 @@
-<app-header (featureSelected)="onNavigate($event)"></app-header>
-<app-home *ngIf="loadedFeature === 'home'"></app-home>
-<app-greeting *ngIf="loadedFeature === 'greeting'"></app-greeting>
-<app-messages></app-messages>
+<!-- <app-header (featureSelected)="onNavigate($event)"></app-header> -->
+<!-- <app-home *ngIf="loadedFeature === 'home'"></app-home>
+<app-greeting *ngIf="loadedFeature === 'greeting'"></app-greeting> -->
+<app-header></app-header>
+<router-outlet></router-outlet>
+
