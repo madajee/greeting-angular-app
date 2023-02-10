@@ -1,14 +1,21 @@
 <h2>My Greetings</h2>
-<ul class="heroes">
+<!-- <ul class="heroes">
   <li *ngFor="let greeting of greetings">
     <a routerLink="/detail/{{greeting.id}}">
       <span class="badge">say {{greeting.greet_en}} in {{greeting.lang}}</span>
-      <!-- <span class="badge">{{greeting.id}}</span>
+    <span class="badge">{{greeting.id}}</span>
       <span class="badge">{{greeting.lang}}</span>
-      <span class="badge">{{greeting.greet_en}}</span> -->
+      <span class="badge">{{greeting.greet_en}}</span>
     </a>
   </li>
+</ul> -->
+<ul class="list-group">
+  <li *ngFor="let greeting of greetings" class="list-group-item">
+  <a routerLink="/detail/{{greeting.id}}">
+      say {{greeting.greet_en}} in {{greeting.lang}}
+  </a></li>
 </ul>
+
 
 
 
